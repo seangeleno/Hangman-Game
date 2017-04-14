@@ -4,17 +4,22 @@ body{
 
 .text-center{
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	color:#777;
 }
 
 .panel-heading{
-	font-size: 32px;
+	font-size: 38px;
+	background: url("../images/heading.png");
+	color:black;
+	font-weight: bolder;
+	font-style: normal;	
 
 }
 .panel-body{
 	font-size:30px;
 	color:#4aaaa5;
 	padding: 0px;
+	padding-right: 15px;
+	background-color:yellow;
 }
 
 #freshPrince{

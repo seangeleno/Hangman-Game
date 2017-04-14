@@ -88,7 +88,7 @@ document.onkeyup = function(event){
 		console.log(numOfGuesses);
 
 		var html = "<p> guess what letter I'm thinking of <p>" +
-       "<p> wins: " + wins + "</p>" + "<p> Losses: " + losses + "</p>" + "<p> Current Word: " + emptyString + "</p>" + "<p> Guesses Left: " + numOfGuesses + "</p>" + "<p>Your Guesses so far: " + guessSoFar + " </p>";
+       "<p> wins: " + wins + "</p>" + "<p> Losses: " + losses + "</p>" + "<p> Current Word: " + emptyString.join(' ') + "</p>" + "<p> Guesses Left: " + numOfGuesses + "</p>" + "<p>Your Guesses so far: " + guessSoFar + " </p>";
 
         document.querySelector('#guessArea').innerHTML = html;
 	} // the end of the function event
