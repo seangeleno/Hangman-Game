@@ -67,9 +67,11 @@ document.onkeyup = function(event){
 											charCounter++;									
 											emptyString.splice(i,1,userGuess);
 											if(charCounter === computerChoice.length){
-												wins++;
-												console.log(emptyString);
-												reset();
+												if(confirm( "Band Name is:  "+ computerChoice + "  would you like to continue?")){
+													wins++;
+													console.log(emptyString);
+													reset();
+												}
 											}
 											console.log(wins + " Losses:" + losses);
 											console.log(emptyString);
@@ -82,6 +84,10 @@ document.onkeyup = function(event){
 
 		console.log(numOfGuesses);
 
+		var html = "<p> guess what letter I'm thinking of <p>" +
+       "<p> wins: " + wins + "</p>" + "<p> Losses: " + losses + "</p>" + "<p> Current Word: " + emptyString + "</p>" + "<p> Guesses Left: " + numOfGuesses + "</p>" + "<p>Your Guesses so far: " + guessSoFar + " </p>";
+
+        document.querySelector('#guessArea').innerHTML = html;
 	} // the end of the function event
 
 

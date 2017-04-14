@@ -1,0 +1,31 @@
+body{
+	background: url("../images/cassette.png");
+}
+
+.text-center{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color:#777;
+}
+
+.panel-heading{
+	font-size: 32px;
+
+}
+.panel-body{
+	font-size:30px;
+	color:#4aaaa5;
+	padding: 0px;
+}
+
+#freshPrince{
+	width:250px;
+	height:200px;
+}
+
+#guessArea{
+	color:white;
+	font-size:20px;
+	width:100%;
+	height:100%;
+	border-style: dotted;
+}
