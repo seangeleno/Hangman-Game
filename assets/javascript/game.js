@@ -52,6 +52,7 @@ document.onkeyup = function(event){
 		} // makes sure you select an actual letter
 			else if (numOfGuesses === 0) {
 					losses++;
+					alert("This was the band you missed: " + computerChoice);
 					reset();
 					} // checks to see if num of guesses is 0	
 						else if(guessSoFar.indexOf(userGuess) === -1){
@@ -70,6 +71,8 @@ document.onkeyup = function(event){
 												if(confirm( "Band Name is:  "+ computerChoice + "  would you like to continue?")){
 													wins++;
 													console.log(emptyString);
+													reset();
+												} else{
 													reset();
 												}
 											}
